@@ -220,7 +220,7 @@
 .swiper_bg{
     background-image: url(assets/swiper_bg.png);
     display: none;
-    background-attachment: fixed;
+    /*background-attachment: fixed;*/
     background-position: bottom;
     margin-top: 100px;
     padding: 40px 0;
