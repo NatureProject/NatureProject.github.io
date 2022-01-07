@@ -5,15 +5,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
     <link rel="ICON" href="#" type="picture">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/> 
     <script defer src="script.js"></script>
     <title>Nature</title>
 </head>
+                                                <!--фикс первого поп-апа!!!-->
 <body>
+<div class="progress"></div>
 <div class="body_photo">
     <header>
         <div class="wrapper">
@@ -34,11 +36,11 @@
                     <span class="burger_line"></span>
                 </button>
                 <div class="burger_menu" id="burger_menu">
-                        <a class="header_links_burger" href="#">Главная</a>
-                        <a class="header_links_burger" href="#">О нас</a>
-                        <a class="header_links_burger" href="#">Контакты</a>
-                        <a class="header_links_burger" href="#">Маршруты</a>
-                        <a class="header_links_burger" href="#">Галерея</a>
+                    <a class="header_links_burger" href="#">Главная</a>
+                    <a class="header_links_burger" href="#">О нас</a>
+                    <a class="header_links_burger" href="#">Контакты</a>
+                    <a class="header_links_burger" href="#">Маршруты</a>
+                    <a class="header_links_burger" href="#">Галерея</a>
                 </div>
             </div>
         </div>
@@ -59,7 +61,7 @@
                     </p>
                     <a class="under_header_button" id="popup_btn" href="#popup">Подробнее<a>
                     <div class="popup" id="popup">
-                        <a href="#footer" class="popup_close_wherever"></a>
+                        <a href="#header" class="popup_close_wherever"></a>
                         <div class="popup_body">
                             <div class="popup_content">
                                 <a class="close" href="#header">&#935;</a>
@@ -84,7 +86,7 @@
                         </p>
                     </div>
                 </div>
-            </div>
+            </div>  
     </div>
 </div>
 
@@ -118,7 +120,7 @@
     </div>
 </div>
 
-<!--<div class="wrapper">
+<div class="wrapper">
     <div class="galery">
         <p class="galery_main_text">
             sony world photography awards
@@ -137,26 +139,58 @@
         </div>
     </div>
 </div>
+<div class="swiper_bg">
+    <div class="swiper">
+        
+        <div class="swiper-wrapper">
 
-<div class="swiper">
-    <!-- Additional required wrapper --
-    <div class="swiper-wrapper">
-      <!-- Slides --
-      <div class="swiper-slide"><img class="galery_photo" src="assets/nature_photo/img7.jpg" alt="nature"></div>
-      <div class="swiper-slide"><img class="galery_photo" src="assets/nature_photo/img7.jpg" alt="nature"></div>
-      <div class="swiper-slide"><img class="galery_photo" src="assets/nature_photo/img7.jpg" alt="nature"></div>
+        <div class="swiper-slide">
+            <img class="galery_photo swiper-lazy" data-src="assets/nature_photo/img7.jpg" alt="nature">
+            <div class="swiper-lazy-preloader"></div>
+        </div>
+        <div class="swiper-slide">
+            <img class="galery_photo swiper-lazy" data-src="assets/nature_photo/img8.jpg" alt="nature">
+            <div class="swiper-lazy-preloader"></div>
+        </div>
+        <div class="swiper-slide">
+            <img class="galery_photo swiper-lazy" data-src="assets/nature_photo/img9.jpg" alt="nature">
+            <div class="swiper-lazy-preloader"></div>
+        </div>
+        <div class="swiper-slide">
+            <img class="galery_photo swiper-lazy" data-src="assets/nature_photo/img10.jpg" alt="nature">
+            <div class="swiper-lazy-preloader"></div>
+        </div>
+        <div class="swiper-slide">
+            <img class="galery_photo swiper-lazy" data-src="assets/nature_photo/img11.jpg" alt="nature">
+            <div class="swiper-lazy-preloader"></div>
+        </div>
+        <div class="swiper-slide">
+            <img class="galery_photo swiper-lazy" data-src="assets/nature_photo/img12.jpg" alt="nature">
+            <div class="swiper-lazy-preloader"></div>
+        </div>
+
+        </div>
+
+        <div class="swiper-pagination"></div>
+    
+        <div class="swiper-button-prev">
+                <svg width="25px" height="35px" viewBox="0 -1 49 102" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+                    <g id="Group" transform="matrix(-3.3259353E-06 -1 1 -3.3259353E-06 2.5003357 97.5043)">
+                    <path d="M0 0L47.0042 43" class="slider_svg" id="Line" fill="none" fill-rule="evenodd" stroke="#FFFFFF" stroke-width="6" stroke-linecap="square" />
+                    <path d="M47.0042 43L95.0042 0.5" class="slider_svg" id="Line-2" fill="none" fill-rule="evenodd" stroke="#FFFFFF" stroke-width="6" stroke-linecap="square" />
+                    </g>
+                </svg>
+        </div>
+        <div class="swiper-button-next">
+                <svg width="25px" height="35px" viewBox="0 -1 49 102" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+                    <g id="Group" transform="matrix(-3.3259353E-06 -1 1 -3.3259353E-06 2.5003357 97.5043)">
+                    <path d="M0 0L47.0042 43" class="slider_svg" id="Line" fill="none" fill-rule="evenodd" stroke="#FFFFFF" stroke-width="6" stroke-linecap="square" />
+                    <path d="M47.0042 43L95.0042 0.5" id="Line-2" class="slider_svg" fill="none" fill-rule="evenodd" stroke="#FFFFFF" stroke-width="6" stroke-linecap="square" />
+                    </g>
+                </svg>
+        </div>
     </div>
-    <!-- If we need pagination --
-    <div class="swiper-pagination"></div>
-  
-    <!-- If we need navigation buttons --
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
-  
-    <!-- If we need scrollbar --
-    <div class="swiper-scrollbar"></div>
-  </div>
--->
+</div>
 
 <div class="wrapper no_wrapper">
     <div class="desert">

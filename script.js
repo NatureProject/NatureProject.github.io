@@ -1,3 +1,4 @@
+const progress = document.querySelector('.progress');
 let popup = document.getElementById("popup");
 let popup_btn = document.getElementById("popup_btn");
 const burgerButton = document.getElementById("burger_btn");
@@ -57,6 +58,15 @@ function openPopup() {
   disableBodyScroll({ savePosition: true });
 }
 
+function progressBar(e){
+  let windowScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  let windowHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  let per = windowScroll / windowHeight * 100;
+  progress.style.width = per + '%';
+}
+
+
+window.addEventListener('scroll', progressBar);
 popup_btn.addEventListener("click", openPopup);
 popup.addEventListener("click", closePopup);
 burgerMenu.addEventListener("click", toggleOpenClass);
