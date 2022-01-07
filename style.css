@@ -1350,9 +1350,9 @@ footer{
 
 
 }
-@media (min-width: 425px) and (max-width: 595px){
+@media (min-width: 461px) and (max-width: 595px){
     
-    .siper{
+    .swiper{
         display: flex;
         z-index: 1000;
     }
@@ -1572,8 +1572,227 @@ footer{
 }
 
 }
+@media (min-width: 425px) and (max-width: 460px){
+    .flex_galery{
+        display: none;
+    }
+    
+    .swiper {
+        display: flex;
+        z-index: 1000;
+    }
 
-@media (min-width: 375px) and (max-width:424px){
+    .swiper_bg{
+        display: flex;
+    }
+
+    .swiper-button-next, .swiper-button-prev {
+        display: none !important;
+    }
+
+    .swiper-slide > .galery_photo {
+        width: 90%;
+        margin: 40px auto;
+    }
+
+    br{
+        display: block;
+    }
+
+    .main_under_header_block {
+        font-size: 48px;
+    }
+
+    .burger_btn{
+        display: flex;
+    }   
+
+    .nav_header , .header_links{
+        display: none;
+    }
+    
+
+    .flex_img_block{
+        flex-grow: 0;
+    }
+
+    .under_header_img{
+        max-width: 100%;
+    }
+
+    .hide_img{
+        display: none;
+    }
+
+    .under_header_block {
+        width: 100%;
+        order: -1;
+    }
+
+.under_header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    row-gap: 30px;
+}
+
+.under_header_author {
+    font-size: 18px;
+    margin-top: 30px;
+    transform: translateY(-20px);
+}
+
+.galery_photo {
+    max-width: 366px;
+}
+
+.blue_desert_square {
+    display: none;
+}
+
+.amazing_photos_block {
+    padding: 30px 50px 30px 15px;
+    max-width: 600px;
+    z-index: 10;
+    background-image: url(assets/water-chepakha_shadow.jpg);
+    background-attachment: fixed;
+    background-position: -200px;
+    background-repeat: no-repeat;
+    background-size: cover
+}
+
+.amazing_photos_square {
+    display: none;
+}   
+
+.amazing_photos_main_txt {
+    padding: 35px 0;    
+}
+
+.amazing_photos_img {
+    display: none;
+}
+
+.winners_first {
+    border: 5px solid #6f88a0;
+    padding: 20px 30px 30px 20px;
+    text-align: center;
+    font-size: 45px;
+    font-weight: 600;
+}
+
+.winners_block {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    column-gap: 40px;
+}
+
+.winners_second {
+    padding: 25px 0 0 0;
+}
+
+.snow_houses_info_block {
+    width: 340px;
+    padding: 24px;
+}
+
+.block_snow_houses {
+    margin: 220px 0 150px 0;
+}
+
+.snow_houses_blue_line {
+    width: 22%;
+}
+
+.square {
+    width: 380px;
+    height: 200px;
+}
+
+.snow_block {
+    float: none;   
+}
+
+.wrapper_snow {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 16px;
+    display: flex;
+    justify-content: center;
+}
+
+.info_desert {
+    transform: translate(-50px, 130px);
+    float: right;
+    right: 0;
+    border: 2px solid #6f88a0;
+    padding: 10px;
+    width: 330px;
+    height: 140px;
+    z-index: 100;
+    position: absolute;
+}
+
+.desert_img {
+    width: 100%;
+}
+
+.footer_block {
+    padding: 50px 0 25px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 40px;
+}
+
+.subscribe{
+  transform: translateX(-20px);
+  margin: 0 auto;
+}
+
+.footer_info {
+    font-size: 16px;
+    width: 45%;
+}
+
+.subscribe > .email {
+    height: 40px;
+    width: 275px;
+    
+}
+
+.submit_email {
+    height: 40px;
+    width: 110px;
+}
+
+.flex_images_block{
+    margin-top: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.flex_img_block{
+    max-width: 30%;
+}
+
+.flex_img_block_wirh_text {
+    padding: 10px;
+ }
+
+ .amazing_photos_second_txt {
+    font-size: 16px;
+    margin: 30px 0 20px 0;
+    width: 100%;
+    letter-spacing: 1px;
+}
+
+}
+@media (min-width: 375px) and (max-width: 424px){
 
     .flex_galery{
         display: none;
@@ -1590,6 +1809,15 @@ footer{
 
     .swiper-slide > .galery_photo {
         width: 60%;
+        margin: 40px auto;
+    }
+
+    .swiper-button-next, .swiper-button-prev {
+        display: none !important;
+    }
+
+    .swiper-slide > .galery_photo {
+        width: 90%;
         margin: 40px auto;
     }
 
