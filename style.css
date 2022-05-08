@@ -409,7 +409,8 @@ header{
 }
 
 .block_snow_houses{
-    margin: 150px 0 150px 0;
+    max-width: 1140px;
+    margin: 150px auto 160px auto;
     padding: 150px 0 100px 0;
     background-image: url(assets/snow_houses.jpg);
     background-attachment: fixed;
@@ -568,7 +569,7 @@ header{
 .flex_images_block{
     margin-top: 200px;
     display: flex;
-    /*flex-wrap: wrap;*/
+   justify-content: center;
 }
 
 .flex_img_block > .flex_img_block_img_container{
